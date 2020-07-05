@@ -11,7 +11,434 @@
 }
 
 @font-face{
-    font-family:open-light;
+    font-family:open-light;@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+    @font-face{
+        font-family: open-bold;
+        src: url(font/OpenSans-Bold.ttf);
+    }
+    
+    @font-face{
+        font-family:open-extra ;
+        src: url(font/OpenSans-ExtraBold.ttf);
+    }
+    
+    @font-face{
+        font-family:open-light;
+        src: url(font/OpenSans-Light.ttf);
+    }
+    
+    @font-face{
+        font-family:open-reg ;
+        src: url(font/OpenSans-Regular.ttf);
+    }
+    
+    @font-face{
+        font-family: open-semi;
+        src: url(font/OpenSans-SemiBold.ttf);
+    }
+    
+    
+    html,body{
+        scroll-behavior: smooth;
+        overflow-x: hidden;
+    }
+    /*---------------------------------------------------------*/
+    
+    
+    .header-bg img{
+        position: absolute;
+        box-shadow: 5px 5px 7px rgb(189, 189, 189);
+        height: 40vh;
+        width: 100vw;
+    }
+    
+    
+    
+    /*---------------------------------------------------------*/
+    
+    
+    
+    .header-comp{
+        display: flex;
+        flex-wrap: no-wrap;
+        
+    }
+    
+    .header-comp .logo-comp{
+        flex-grow: 1;
+        color: rgb(0, 0, 0);
+        margin-top: 2%;
+        margin-left: 20%;
+    }
+    
+    .logo-comp img{
+        height: 140px;
+        width: 170px;
+    }
+    
+    .logo-comp p{
+        line-height: 60%;
+    }
+    
+    #logo-1{
+        letter-spacing: 3px;
+        font-family: open-reg;
+        font-size: 55px;
+        margin-left: 2%;
+        text-shadow: 3px 2px 5px #763b00;
+    }
+    #logo-2{
+        letter-spacing: 7px;
+        font-family: open-light;
+        font-size: 20px;
+        text-shadow: 3px 2px 2px #6f3700;
+    }
+    
+    /*--------------------------------------*/
+    
+    
+    .header-comp .text-comp{
+        flex-grow: 2;
+        margin-top:2.5%;
+        color: white;
+    }
+    
+    .text-comp #small-txt{
+        font-family: open-light;
+        font-size: 20px;
+        text-shadow: 1px 1px 1px #000000;
+    }
+    
+    .text-comp #big-txt{
+        line-height: 110%;
+        width: 80%;
+        font-family: open-reg;
+        font-size: 50px;
+        text-shadow: 1px 2px 2px #211000
+    }
+    
+    .btn-donate{
+        height: 300px;
+        width: 600px;
+        cursor: pointer;
+        padding: 0.46em 1.6em;
+        border-radius:0.12em;
+        font-family:Arial, Helvetica, sans-serif;
+        font-weight:300;
+        color:#ffffff;
+        background-color:#e22916;
+        text-align:center;
+        box-sizing: border-box;
+    }
+    
+    .btn-donate:hover{
+        box-shadow: 2px 0px 15px 5px rgb(194, 0, 0) inset;;
+    }
+    
+    
+    /*------------------------------------------------------@media------------*/
+    
+    
+    
+    @media screen and (max-width:1080px){
+        #logo-1{
+            font-size: 45px;
+            margin-left: 10% ;
+        }
+        #logo-2{
+            font-size: 17px;
+            letter-spacing: 18px;
+            line-height: 18px;
+            margin-left: 17%;
+        }
+    
+        .header-comp .text-comp{
+            margin-top:4%;
+        }
+        .text-comp #small-txt{
+            font-size: 17px;
+        }
+        .text-comp #big-txt{
+            font-size: 40px;
+        }
+    }
+    
+    @media screen and (max-width:640px){
+        .header-comp .logo-comp{
+            flex-grow: 0;
+            margin-left: 10%;
+            margin-top: 8%;
+        }
+        .logo-comp img{
+            height: 80px;
+            width: 100px;
+        }
+        #logo-1{
+            font-size: 40px;
+            margin-left: 0%;
+        }
+        #logo-2{
+            font-size: 15px;
+            margin-left: 3%;
+            letter-spacing: 20px;
+            line-height: 17px;
+        }
+        .header-comp .text-comp{
+            margin-top: 7%;
+        }
+        .text-comp #small-txt{
+            font-size: 17px;
+        }
+        .text-comp #big-txt{
+            font-size: 40px;
+            width: 100%;
+        }
+    }
+    
+    
+    /*------------------------------------------------------------header section over----------------------------------------------------------------*/
+    
+    .images{
+        margin-top: 5%;
+        margin-left: 5%;
+        margin-bottom: 2%;
+        display: flex;
+        flex-wrap: wrap;
+    
+    }
+    .images img{
+        margin-top: 20px;
+        margin-left: 6px;
+        cursor: pointer;
+        height: 190px;
+        object-fit: cover;
+        transition: .3s;
+    }
+    .images img:hover{
+        transform: scale(1.5);
+    }
+    
+    .images figcaption{
+        margin-left: 10%;
+        margin-top: 1%;
+        width: 80%;
+        text-align: center;
+        text-justify: inter-cluster;
+        font-family: open-light;
+        font-size:15px;
+        color: rgb(41, 41, 41);
+    }
+    
+    /*------------------------------------------------------@media------------*/
+    
+    
+    @media screen and (max-width:640px){
+        .images{
+            margin-top: 10%;
+        }
+        .images img{
+            width: 90vw;
+            object-fit: contain;
+        }
+        
+    }
+    
+    /*------------------------------------------------------------donate box----------------------------------------------------------------*/
+    
+    .donate-box{
+        position: fixed;
+        float: right;
+        right: 5%;
+        margin-top: 1%;  /*---make this 5% in mobile view*/
+        width: 350px;
+        height: 250px;
+        box-shadow:0 0.3125rem 1rem -0.1875rem rgba(0,0,0,.2);
+        background-color:#e87800 ;
+        color: #ffffff;
+        border: none;
+        border-radius: 10px;
+    
+    }
+    .donate-box:hover{
+        background-color: white;
+        color: #e87800;
+        border: 2px solid #e87800 ;
+    }
+    
+    .donate-box form{
+        margin-left: 27%;
+        margin-top: 15%;
+    }
+    
+    .donate-box img{
+        display: none;
+    }
+    
+    .donate-box p{
+        font-family:poppins;
+        font-size: 19px; 
+        margin-left:12%; 
+        margin-top: 5%;
+        text-decoration: underline;
+        
+    }
+    
+    .donate-box a{
+        color: white;
+        background-color: #00bd1f;
+        padding:10px;
+        border-radius: 3px;
+        margin-left:30%;
+    }
+    
+    
+    /*------------------------------------------------------@media------------*/
+    
+    
+    @media screen and (max-width:1080px){
+        .donate-box{
+            float: right;
+            position: fixed;
+            width: 30vw;
+            height: 25vh;
+            border-radius: 0;
+            right: 2%;
+            top: 70vh;
+            border-radius: 5px;
+        }
+        .donate-box a{
+            display: inline-block;
+            padding-top: 5px;
+            padding-bottom: 5px;
+        
+        }
+        .donate-box p{
+           display: inline-block;
+        }
+        .donate-box form{
+            margin-left: 29%;
+            margin-top: 5%;
+        }
+    }
+    
+    @media screen and (max-width:640px){
+        .donate-box{
+            float: none;
+            position: fixed;
+            width: 100vw;
+            height: 10vh;
+            border-radius: 0;
+            right: 0%;
+            top: 89.3vh;
+        }
+        .donate-box a{
+            display: none;
+        }
+        .donate-box p{
+           display: none;
+        }
+        .donate-box form{
+            margin-left: 35%;
+            margin-top: 2%;
+        }
+    }
+    
+    
+    /*-----------------------------------------------------STORY-------------------------*/
+    .story{
+        margin-left: 5%;
+        width: 60%;
+        text-align: justify;
+    }
+    
+    .story p{
+        font-weight: lighter;
+        font-size: 15px;
+    }
+    .story #bold{
+        font-weight: bolder;
+    }
+    
+    .story img{
+        margin-top: 20px;
+        margin-left: 10%;
+        margin-bottom: 5%;
+        cursor: pointer;
+        height: 400px;
+        object-fit: cover;
+        transition: .3s;
+    }
+    
+    .story img:hover{
+        transform: scale(1.4);
+    }
+    
+    
+    /*------------------------------------------------------@media------------*/
+    
+    
+    @media screen and (max-width:640px){
+        .story{
+            width: 90%;
+        }
+        .story img{
+            height: 300px;
+        }
+    }
+    
+    
+    /*-----------------------------------------------------STORY-------------------------*/
+    
+    .org-info{
+        margin-left: 5%;
+        margin-top: 30px;
+        margin-bottom: 5%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    
+    .org-info img{
+        border-radius: 10px;
+        height: 70px;
+    }
+    
+    .org-info .org-deg{
+        flex-grow: 2;
+    }
+    .org-deg p{
+        font-family: open-light;
+        font-size: 15px;
+        padding-left: 5%;
+    }
+    .social-link{
+        flex-grow: 3;
+        margin-top: 20px;
+    }
+    .social-link a{
+        cursor: pointer;
+        text-decoration: none;
+        color: white;
+        background-color: blue;
+        padding: 10px 20px 10px 20px;
+        border-radius: 3px;
+        margin-left: 5%;
+    }
+    
+    .social-link a:hover{
+        background-color:rgb(0, 0, 225) ;
+    }
+    
+    
+    /*------------------------------------------------------@media------------*/
+    
+    
+    @media screen and (max-width:1080px){
+        .social-link{
+            flex-grow: 4;
+        }
+    }
     src: url(font/OpenSans-Light.ttf);
 }
 
