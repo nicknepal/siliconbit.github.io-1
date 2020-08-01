@@ -1,0 +1,189 @@
+
+  @font-face{
+    font-family: orkney-thin;
+    src: url(font/Orkney-Light.otf);
+}
+
+@font-face{
+    font-family: orkney-bold;
+    src: url(font/Orkney-Bold.otf);
+}
+
+@font-face{
+    font-family: orkney-med;
+    src: url(font/Orkney-Medium.otf);
+}
+
+@font-face{
+    font-family: orkney-reg;
+    src: url(font/Orkney-Regular.otf);
+}
+
+
+@font-face{
+    font-family:Mont-reg;
+    src: url(font/Mont-Regular.otf);
+  }
+  
+  @font-face{
+    font-family:Mont-book;
+    src: url(font/Mont-Book.otf);
+  }
+  
+  @font-face{
+    font-family:sanspro-reg;
+    src: url(font/sourcesanspro-regular.ttf)
+  }
+  
+  @font-face{
+      font-family:Mont-extraLight;
+      src: url(font/Mont-ExtraLight.otf);
+    }
+  
+
+    
+  
+  /*---------------------------------------------------banner CSS Start-----------------------------------------------------------------*/
+  
+  .banner{
+    height: 30vh;
+    background-color: #076bff;
+    color: white;
+    font-family: orkney-med;
+    font-size:50px;
+    text-align: center;
+  }
+
+  .banner p{
+    display: inline;
+  }
+  .banner img{
+    height: 110%;
+  }
+
+
+ /*---------------------------------------------------Search box CSS -----------------------------------------------------------------*/
+  
+
+ .search-box{
+   height: 13vh;
+   background: rgba(52, 52, 52, 0.358);
+   width: 100%;
+   padding: 15px;
+   display: flex;
+   justify-content: center;
+ }
+
+ .search-box .input {
+  width: 55%;
+  padding: 15px 20px;
+  border: none;
+  border-radius: 2px;
+  font-weight: normal;
+  font-family: orkney-reg;
+  font-size: large;
+}
+
+.searchbtn {
+  background: #cb0fa2;
+  width: 5%;
+  border-radius: 2px;
+  position: relative;
+  cursor: pointer;
+}
+
+.searchbtn .fas{
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 25px;
+}
+
+
+
+ /*---------------------------------------------------Courses dropdowns CSS -----------------------------------------------------------------*/
+ 
+
+ /*---------------------------------------------------Scholarship CSS -----------------------------------------------------------------*/
+ .scholarship{
+   background-color: #cb0fa2;
+   color: white;
+   margin-bottom: 3%;
+   padding:3% 10% ;
+ }
+
+ .scholarship h4{
+  font-family: orkney-bold;
+  text-decoration: underline;
+ }
+.scholarship ul{
+  font-family: times;
+  font-size: 17px;
+}
+.scholarship p{
+  font-weight: lighter;
+  font-style: italic;
+  font-size: 13px;
+  text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+
+/*---------------------------------------------------toggle courses-----------------------------------------------------------*/
+.nybAcro{
+  width: 100%;
+}
+.accordion .fa{
+    margin-right: 0.5rem;
+}
+#accordionSensor .card{
+  width: 100%;
+}
+.btn-link .fa-plus{
+  transform: rotateZ(45deg);
+  transition: all .3s;
+}
+.collapsed .fa-plus{
+  transform: unset;
+}
+#accordionSensor .btn-link{
+    width: 100%;
+    float: left;
+    text-align: left;
+    font-size: 20px;
+    padding: 11px 0;
+    border: none;
+    color: #000;
+    font-weight: 100;
+    border-radius: 0;
+}
+#accordionSensor .fa{
+  float: right;
+  text-align: right;
+  margin-top: 7px;
+  -webkit-text-stroke: 2px white;
+}
+.headerStyle{
+background-color: whitesmoke!important;
+}
+.accordion>.card .card-header{margin-bottom: 10px;border: 0;}
+
+.card-body p{
+  font-weight: lighter;
+}
+
+.card-body ul{
+  font-weight: lighter;
+}
+
+.card-body{
+  font-family: Helvetica;
+}

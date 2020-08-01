@@ -1,0 +1,199 @@
+
+  @font-face{
+    font-family: orkney-thin;
+    src: url(font/Orkney-Light.otf);
+}
+
+@font-face{
+    font-family: orkney-bold;
+    src: url(font/Orkney-Bold.otf);
+}
+
+@font-face{
+    font-family: orkney-med;
+    src: url(font/Orkney-Medium.otf);
+}
+
+@font-face{
+    font-family: orkney-reg;
+    src: url(font/Orkney-Regular.otf);
+}
+
+
+@font-face{
+    font-family:Mont-reg;
+    src: url(font/Mont-Regular.otf);
+  }
+  
+  @font-face{
+    font-family:Mont-book;
+    src: url(font/Mont-Book.otf);
+  }
+  
+  @font-face{
+    font-family:sanspro-reg;
+    src: url(font/sourcesanspro-regular.ttf)
+  }
+  
+  @font-face{
+      font-family:Mont-extraLight;
+      src: url(font/Mont-ExtraLight.otf);
+    }
+  
+
+
+    
+  
+  /*---------------------------------------------------banner-----------------------------------------------------------------*/
+  
+  .banner{
+    height: 30vh;
+    background-color: #076bff;
+    color: white;
+    font-family: orkney-med;
+    font-size:35px;
+    text-align: center;
+    padding-top: 5%;
+  }
+
+  .banner p{
+    display: inline;
+  }
+  .banner img{
+    height: 70%;
+  }
+
+  @media  (max-width:900px){
+    .banner{
+      height: 25vh;
+    }
+    .banner p{
+      padding-top: 3%;
+      font-size: 25px;
+      display: block;
+    }
+    .banner img{
+      height: 30%;
+    }
+  }
+
+ /*---------------------------------------------------sliding text -----------------------------------------------------------------*/
+  
+
+ .notice-library{
+   height: 5vh;
+   background-color:rgb(13, 157, 0) ;
+ }
+
+ .notice-library p{
+   white-space: nowrap;
+   font-family: orkney-thin;
+   color: white;
+   font-weight: lighter;
+   padding-top: 8px;
+   animation: slideleft 70s infinite;
+ }
+
+ @keyframes slideleft{
+   0%{
+     transform: translateX(100%);
+   }
+   100%{
+     transform: translateX(-100%);
+   }
+ }
+
+ /*---------------------------------------------------bootstrap navpills -----------------------------------------------------------------*/
+
+
+ #exTab1{
+  margin-top: 10px;
+ }
+
+#exTab1 .tab-content {
+  color : white;
+  background-color: #0043b0;
+  border-radius:3px;
+  padding : 15px 15px;
+}
+
+.nav-pills li .active{
+  background-color: tomato;
+}
+
+.nav-pills > li > a {
+  display: flex;
+  flex-wrap: nowrap;
+  border-radius: 3px;
+  margin-bottom:2px;
+  padding : 15px 15px;
+  margin-right: 5px;
+  background-color: #0043b0;
+  color: white;
+}
+
+.tab-pane{
+  padding: 3% 3%;
+  display: flex;
+  flex-direction: column;
+}
+
+.tab-pane div{
+  margin-bottom: 2%;
+}
+
+.tab-pane img{
+  height: 100%;
+  width: 100%;
+}
+
+
+#hub-solutions{
+  font-size: 18px;
+  font-family:orkney-reg ;
+  text-decoration: none;
+  color: #cb0fa2;
+  position: absolute;
+  background-color: #ffffff;
+  border-radius: 5px;
+  right: 5%;
+  padding-top: 5px;
+  padding-bottom: 2px;
+  padding-left: 15px;
+  padding-right: 15px;
+  transition: .2s ;
+}
+
+#hub-solutions:hover{
+  transform: scale(1.2);
+}
+
+#hub-training{
+  font-size: 18px;
+  font-family:orkney-reg ;
+  text-decoration: none;
+  color: #cb0fa2;
+  position: absolute;
+  background-color: #ffffff;
+  border-radius: 5px;
+  left: 5%;
+  padding-top: 5px;
+  padding-bottom: 2px;
+  padding-left: 15px;
+  padding-right: 15px;
+  transition: .2s ;
+}
+
+#hub-training:hover{
+  transform: scale(1.2);
+}
+
+@media screen and (max-width:800px){
+  #hub-training{
+    display: none;
+  }
+  #hub-solutions{
+    display: none;
+  }
+}
+

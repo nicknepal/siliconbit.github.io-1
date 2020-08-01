@@ -1,0 +1,185 @@
+
+  @font-face{
+    font-family: orkney-thin;
+    src: url(font/Orkney-Light.otf);
+}
+
+@font-face{
+    font-family: orkney-bold;
+    src: url(font/Orkney-Bold.otf);
+}
+
+@font-face{
+    font-family: orkney-med;
+    src: url(font/Orkney-Medium.otf);
+}
+
+@font-face{
+    font-family: orkney-reg;
+    src: url(font/Orkney-Regular.otf);
+}
+
+
+@font-face{
+    font-family:Mont-reg;
+    src: url(font/Mont-Regular.otf);
+  }
+  
+  @font-face{
+    font-family:Mont-book;
+    src: url(font/Mont-Book.otf);
+  }
+  
+  @font-face{
+    font-family:sanspro-reg;
+    src: url(font/sourcesanspro-regular.ttf)
+  }
+  
+  @font-face{
+      font-family:Mont-extraLight;
+      src: url(font/Mont-ExtraLight.otf);
+    }
+  
+
+
+    
+  
+  /*---------------------------------------------------banner-----------------------------------------------------------------*/
+  
+  .banner{
+    height: 30vh;
+    background-color: #076bff;
+    color: white;
+    font-family: orkney-med;
+    font-size:35px;
+    text-align: center;
+    padding-top: 5%;
+  }
+
+  .banner p{
+    display: inline;
+  }
+  .banner img{
+    height: 70%;
+  }
+
+  @media  (max-width:900px){
+    .banner{
+      height: 25vh;
+    }
+    .banner p{
+      padding-top: 5%;
+      font-size: 25px;
+      display: block;
+    }
+    .banner img{
+      height: 30%;
+    }
+  }
+
+ /*---------------------------------------------------sliding text -----------------------------------------------------------------*/
+  
+
+ .notice-library{
+   height: 5vh;
+   background-color:rgb(13, 157, 0) ;
+ }
+
+ .notice-library p{
+   white-space: nowrap;
+   font-family: orkney-thin;
+   color: white;
+   font-weight: lighter;
+   padding-top: 8px;
+   animation: slideleft 70s infinite;
+ }
+
+ @keyframes slideleft{
+   0%{
+     transform: translateX(100%);
+   }
+   100%{
+     transform: translateX(-100%);
+   }
+ }
+
+
+ /*---------------------------------------------------image gallery css start-----------------------------------------------------------------*/
+ 
+
+ 
+:root {
+	font-size: 10px;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+body {
+	min-height: 100vh;
+	background-color: #fafafa;
+}
+
+.container {
+	max-width: 130rem;
+	margin: 0 auto;
+	padding: 0 2rem 2rem;
+}
+
+.heading {
+  font-family: orkney-thin;
+	font-size: 2rem;
+	font-weight: 500;
+	line-height: 1.5;
+	text-align: center;
+	padding: 3.5rem 0;
+	color: #1a1a1a;
+}
+
+.heading span {
+  display: block;
+}
+
+.gallery {
+	display: flex;
+	flex-wrap: wrap;
+	margin: -1rem -1rem;
+}
+
+.gallery-item {
+	flex: 1 0 34rem;
+	margin: 1rem;
+	box-shadow: 0.3rem 0.4rem 0.4rem rgba(0, 0, 0, 0.4);
+	overflow: hidden;
+}
+
+.gallery-image {
+	display: block;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	transition: transform 400ms ease-out;
+}
+
+.gallery-image:hover {
+	transform: scale(1.15);
+}
+
+
+
+@supports (display: grid) {
+	.gallery {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(24rem, 1fr));
+		grid-gap: 2rem;
+	}
+
+	.gallery,
+	.gallery-item {
+		margin: 0;
+	}
+}
+

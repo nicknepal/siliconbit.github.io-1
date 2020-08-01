@@ -1,0 +1,206 @@
+
+  @font-face{
+    font-family: orkney-thin;
+    src: url(font/Orkney-Light.otf);
+}
+
+@font-face{
+    font-family: orkney-bold;
+    src: url(font/Orkney-Bold.otf);
+}
+
+@font-face{
+    font-family: orkney-med;
+    src: url(font/Orkney-Medium.otf);
+}
+
+@font-face{
+    font-family: orkney-reg;
+    src: url(font/Orkney-Regular.otf);
+}
+
+
+@font-face{
+    font-family:Mont-reg;
+    src: url(font/Mont-Regular.otf);
+  }
+  
+  @font-face{
+    font-family:Mont-book;
+    src: url(font/Mont-Book.otf);
+  }
+  
+  @font-face{
+    font-family:sanspro-reg;
+    src: url(font/sourcesanspro-regular.ttf)
+  }
+  
+  @font-face{
+      font-family:Mont-extraLight;
+      src: url(font/Mont-ExtraLight.otf);
+    }
+  
+
+
+    
+  
+  /*---------------------------------------------------banner-----------------------------------------------------------------*/
+  
+  .banner{
+    height: 30vh;
+    background-color: #076bff;
+    color: white;
+    font-family: orkney-med;
+    font-size:50px;
+    text-align: center;
+  }
+
+  .banner p{
+    display: inline;
+  }
+  .banner img{
+    height: 110%;
+  }
+
+  @media  (max-width:700px){
+    .banner p{
+      padding-top: 5%;
+      font-size: 35px;
+      display: block;
+    }
+    .banner img{
+      height: 50%;
+    }
+  }
+
+ /*---------------------------------------------------sliding text -----------------------------------------------------------------*/
+  
+
+ .notice-library{
+   height: 5vh;
+   background-color:rgb(13, 157, 0) ;
+ }
+
+ .notice-library p{
+   white-space: nowrap;
+   font-family: orkney-thin;
+   color: white;
+   font-weight: lighter;
+   padding-top: 8px;
+   animation: slideleft 70s infinite;
+ }
+
+ @keyframes slideleft{
+   0%{
+     transform: translateX(100%);
+   }
+   100%{
+     transform: translateX(-70%);
+   }
+ }
+
+
+ /*---------------------------------------------------student form text upside-----------------------------------------------------------------*/
+  
+ .library-form{
+  height: 10vh;
+  padding-top: 6%;
+  margin-bottom: 6%;
+ }
+
+ .library-form h3{
+   text-align: center;
+   font-family: orkney-med;
+ }
+
+.library-form p{
+  text-align: center;
+  font-family: orkney-thin;
+}
+
+
+ /*---------------------------------------------------login form -----------------------------------------------------------------*/
+  
+/*---------------------------------contact-box-2----------------------------------------------*/
+.contact-box-9{
+  width: 500px;
+  height: 400px;
+  position: relative;
+  border-radius: 10px;
+  border: .25px solid rgb(222, 222, 222);
+  padding-top: 3%;
+  margin-bottom: 3%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.contact-box-9 .info-box-2{
+  margin-bottom: 8%;
+}
+
+.info-box-1{
+  display:flex;
+  flex-direction: column;
+  margin-top: 15px;
+}
+
+.contact-box-9 span{
+  position: absolute;
+  padding-left: 5px;
+  font-size: 17px;
+  font-family: orkney-thin;
+  color: rgb(155, 155, 155);
+  pointer-events: none;
+  transition: .1s;
+}
+
+.contact-box-9  input {
+  width:100%;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid rgb(235, 235, 235);
+  outline: none;
+  font-family: orkney-thin;
+  font-size: 17px;
+  height: 40px;
+  border-radius: 5px;
+  box-shadow: inset 2px 2px 2px #cbced1,
+              inset -2px -2px 2px #ffffff;
+}
+
+
+textarea{
+      width:100%;
+      background-color: transparent;
+      border: none;
+      border-bottom: 1px solid rgb(216, 216, 216);
+      outline: none;
+      border-radius: 5px;
+      box-shadow: inset 2px 2px 2px #cbced1,
+              inset -2px -2px 2px #ffffff;
+}
+
+
+input:focus~span,
+textarea:focus~span,
+input:valid~span,
+textarea:valid~span{
+  transform: translateY(-38px);
+  font-size: 20px;
+  letter-spacing: 1px;
+  font-family: orkney-thin;
+}
+
+
+.contact-box-9 #submit{
+  height: 40px;
+  width: 130px;
+  border: none;
+  margin-top: 15px;
+  background-color:#00a5bb ;
+  color: white;
+}
+
+.contact-box-9 #submit:hover{
+  background-color: #038596;
+}
