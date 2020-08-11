@@ -53,27 +53,29 @@
     font-family: orkney-med;
     font-size:35px;
     text-align: center;
-    padding-top: 5%;
+    padding-top: 3%;
+    padding-bottom: 2%;
   }
 
   .banner p{
     display: inline;
   }
   .banner img{
-    height: 70%;
+   height:110%;
   }
 
   @media  (max-width:900px){
     .banner{
       height: 25vh;
+      padding-top: 5%;
+      padding-bottom: 4%;
     }
     .banner p{
-      padding-top: 3%;
       font-size: 25px;
       display: block;
     }
     .banner img{
-      height: 30%;
+      height: 70%;
     }
   }
 
@@ -99,52 +101,62 @@
      transform: translateX(100%);
    }
    100%{
-     transform: translateX(-100%);
+     transform: translateX(-50%);
    }
  }
 
  /*---------------------------------------------------bootstrap navpills -----------------------------------------------------------------*/
 
 
- #exTab1{
-  margin-top: 10px;
- }
-
-#exTab1 .tab-content {
-  color : white;
-  background-color: #0043b0;
-  border-radius:3px;
-  padding : 15px 15px;
+  /*----------------------------------------------------------Goto Course------------------------------------------------------*/
+  
+  .flex-int{
+    display: flex;
+    color: white;
+    border-radius: 10px ;
+    flex-wrap: wrap;
+    transition: transform .2s;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.flex-int:hover{
+     -ms-transform: scale(.99); /* IE 9 */
+     -webkit-transform: scale(.99); /* Safari 3-8 */
+    transform: scale(.99); 
+    background-color: #d811ad;
 }
 
-.nav-pills li .active{
-  background-color: tomato;
+.contact-img img{
+  height: 100px;
+}
+.call p{
+  font-family: orkney-thin;
+ padding-top: 4%;
 }
 
-.nav-pills > li > a {
-  display: flex;
-  flex-wrap: nowrap;
-  border-radius: 3px;
-  margin-bottom:2px;
-  padding : 15px 15px;
-  margin-right: 5px;
-  background-color: #0043b0;
-  color: white;
+/*----------------------------------------------------Media----------------------------------------------------*/
+
+@media screen and (max-width:450px){
+  .call{
+    display: none;
+  }
 }
 
-.tab-pane{
-  padding: 3% 3%;
-  display: flex;
-  flex-direction: column;
-}
 
-.tab-pane div{
-  margin-bottom: 2%;
-}
 
-.tab-pane img{
-  height: 100%;
-  width: 100%;
-}
 
+
+@media screen and (max-width:900px){
+.flex-item-1 img{
+  height: 250px;
+}
+.flex-item-1 p{
+  font-size: 13px;
+}
+.flex-item-1 span{
+  font-size: 24px;
+}
+}
 

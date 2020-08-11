@@ -1,0 +1,235 @@
+
+  @font-face{
+    font-family: orkney-thin;
+    src: url(font/Orkney-Light.otf);
+}
+
+@font-face{
+    font-family: orkney-bold;
+    src: url(font/Orkney-Bold.otf);
+}
+
+@font-face{
+    font-family: orkney-med;
+    src: url(font/Orkney-Medium.otf);
+}
+
+@font-face{
+    font-family: orkney-reg;
+    src: url(font/Orkney-Regular.otf);
+}
+
+
+@font-face{
+    font-family:Mont-reg;
+    src: url(font/Mont-Regular.otf);
+  }
+  
+  @font-face{
+    font-family:Mont-book;
+    src: url(font/Mont-Book.otf);
+  }
+  
+  @font-face{
+    font-family:sanspro-reg;
+    src: url(font/sourcesanspro-regular.ttf)
+  }
+  
+  @font-face{
+      font-family:Mont-extraLight;
+      src: url(font/Mont-ExtraLight.otf);
+    }
+  
+
+
+    
+  
+  /*---------------------------------------------------banner-----------------------------------------------------------------*/
+  
+  .banner{
+    height: 30vh;
+    background-color: #076bff;
+    color: white;
+    font-family: orkney-med;
+    font-size:35px;
+    text-align: center;
+    padding-top: 3%;
+    padding-bottom: 2%;
+  }
+
+  .banner p{
+    display: inline;
+  }
+  .banner img{
+   height:110%;
+  }
+
+  @media  (max-width:900px){
+    .banner{
+      height: 25vh;
+      padding-top: 5%;
+      padding-bottom: 4%;
+    }
+    .banner p{
+      font-size: 25px;
+      display: block;
+    }
+    .banner img{
+      height: 70%;
+    }
+  }
+
+ /*---------------------------------------------------sliding text -----------------------------------------------------------------*/
+  
+
+ .notice-library{
+   height: 5vh;
+   background-color:rgb(13, 157, 0) ;
+ }
+
+ .notice-library p{
+   white-space: nowrap;
+   font-family: orkney-thin;
+   color: white;
+   font-weight: lighter;
+   padding-top: 8px;
+   animation: slideleft 70s infinite;
+ }
+
+ @keyframes slideleft{
+   0%{
+     transform: translateX(100%);
+   }
+   100%{
+     transform: translateX(-50%);
+   }
+ }
+
+ /*---------------------------------------------------what clients say-----------------------------------------------------------------*/
+
+
+
+
+
+ .ourworks-box{
+	width: 60%;
+	justify-content: center;
+	text-align: center;
+}
+
+.our-works-head{
+  font-family: orkney-med;
+	font-size: 35px;
+	font-weight: 400;
+	color: black;
+}
+
+.ourworks-box p{
+  font-family: orkney-thin;
+}
+.introduce{
+	height: 250px;
+	background-color:white;
+	box-shadow: 0 3px 10px #cb0fa22c;
+	border-bottom: 4px solid #cb0fa2;
+  color: black;
+  font-family: orkney-thin;
+}
+
+.introduce:hover{
+	box-shadow: 0 3px 15px #65075027;
+	border-bottom: 4px solid #cb0fa2;
+	color: black;
+	text-decoration: none;
+}
+.flex-column-1{
+  font-size: 13px;
+	height: 70%;
+	width: 100%;
+
+}
+.flex-column-2{
+	height: 30%;
+	width: 100%;
+	align-items:center;
+}
+.text-gray{
+  font-family: orkney-reg;
+	color: gray;
+}
+.pic{
+    height: 70px;
+    width: 70px;
+    margin-left: 20px;
+    border-radius: 50%;
+    transition: all .2s ease-in-out;
+}
+
+.introduce:hover .pic{
+	transform: scale(1.1);
+}
+.carousel-indicators .active{
+	background-color: #cb0fa2;
+}
+.carousel-indicators li{
+	background-color: #c8e5ff;
+}
+.carousel-indicators{
+	bottom: -80px;
+}
+.p1{
+	background-image: url("image/board-member-2.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+.p2{
+	background-image: url("image/board-member-1.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+
+}
+.p3{
+	background-image: url("image/board-member-1.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+
+
+
+ /*---------------------------------------------------clients logo section-----------------------------------------------------------------*/
+
+
+
+/* CLIENT GRID 
+==============================================================*/
+.container{
+  padding-top:70px;
+  padding-bottom:20px;
+  text-align:center;
+  max-width: 80%;
+}
+
+.gallery{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+}
+.gallery img{
+    height: 100px;
+    margin-bottom: 30px;
+    box-shadow: 0 5px 10px #00000027;
+    transition: .2s;
+}
+
+.gallery img:hover{
+  transform: scale(1.2);
+}
+
+
+
+

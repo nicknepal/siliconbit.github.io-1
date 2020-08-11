@@ -104,7 +104,7 @@
   
 
 .contact-box{
-  position: absolute;
+  position: relative;
   background-color:#cb0fa2;
   width: 100%;
   height: 350px;
@@ -130,12 +130,11 @@
   color: white;
   text-decoration: none;
   text-align: left;
-  transition: transform .2s;
+  transition: .2s;
 }
 .contact-info a:hover{
-  transform: scale3d(1.1,1.1,1.1);
-  color: black;
-  
+  transform: scale(1.1);
+  color: rgb(0, 0, 0);
 }
 
 .contact-info p{

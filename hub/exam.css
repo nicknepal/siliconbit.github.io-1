@@ -46,30 +46,37 @@
   
   /*---------------------------------------------------banner-----------------------------------------------------------------*/
   
+
   .banner{
     height: 30vh;
     background-color: #076bff;
     color: white;
     font-family: orkney-med;
-    font-size:50px;
+    font-size:35px;
     text-align: center;
+    padding-top: 3%;
+    padding-bottom: 2%;
   }
 
   .banner p{
     display: inline;
   }
   .banner img{
-    height: 110%;
+   height:110%;
   }
 
-  @media  (max-width:700px){
-    .banner p{
+  @media  (max-width:900px){
+    .banner{
+      height: 25vh;
       padding-top: 5%;
-      font-size: 35px;
+      padding-bottom: 4%;
+    }
+    .banner p{
+      font-size: 25px;
       display: block;
     }
     .banner img{
-      height: 50%;
+      height: 70%;
     }
   }
 
@@ -203,4 +210,17 @@ textarea:valid~span{
 
 .contact-box-9 #submit:hover{
   background-color: #038596;
+}
+
+
+@media screen and(max-width:500px){
+  .contact-box-9{
+    width: 350px;
+  }
+  
+  .contact-box-9  input {
+    width: 70%;
+  }
+
+
 }

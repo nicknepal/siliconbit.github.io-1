@@ -1,0 +1,204 @@
+
+  @font-face{
+    font-family: orkney-thin;
+    src: url(font/Orkney-Light.otf);
+}
+
+@font-face{
+    font-family: orkney-bold;
+    src: url(font/Orkney-Bold.otf);
+}
+
+@font-face{
+    font-family: orkney-med;
+    src: url(font/Orkney-Medium.otf);
+}
+
+@font-face{
+    font-family: orkney-reg;
+    src: url(font/Orkney-Regular.otf);
+}
+
+
+@font-face{
+    font-family:Mont-reg;
+    src: url(font/Mont-Regular.otf);
+  }
+  
+  @font-face{
+    font-family:Mont-book;
+    src: url(font/Mont-Book.otf);
+  }
+  
+  @font-face{
+    font-family:sanspro-reg;
+    src: url(font/sourcesanspro-regular.ttf)
+  }
+  
+  @font-face{
+      font-family:Mont-extraLight;
+      src: url(font/Mont-ExtraLight.otf);
+    }
+  
+
+
+    
+  
+  /*---------------------------------------------------banner-----------------------------------------------------------------*/
+  
+  .banner{
+    height: 30vh;
+    background-color: #076bff;
+    color: white;
+    font-family: orkney-med;
+    font-size:35px;
+    text-align: center;
+    padding-top: 3%;
+    padding-bottom: 2%;
+  }
+
+  .banner p{
+    display: inline;
+  }
+  .banner img{
+   height:110%;
+  }
+
+  @media  (max-width:900px){
+    .banner{
+      height: 25vh;
+      padding-top: 5%;
+      padding-bottom: 4%;
+    }
+    .banner p{
+      font-size: 25px;
+      display: block;
+    }
+    .banner img{
+      height: 70%;
+    }
+  }
+
+ /*---------------------------------------------------sliding text -----------------------------------------------------------------*/
+  
+
+ .notice-library{
+   height: 5vh;
+   background-color:rgb(13, 157, 0) ;
+ }
+
+ .notice-library p{
+   white-space: nowrap;
+   font-family: orkney-thin;
+   color: white;
+   font-weight: lighter;
+   padding-top: 8px;
+   animation: slideleft 70s infinite;
+ }
+
+ @keyframes slideleft{
+   0%{
+     transform: translateX(100%);
+   }
+   100%{
+     transform: translateX(-50%);
+   }
+ }
+
+ /*---------------------------------------------------bootstrap navpills -----------------------------------------------------------------*/
+
+.product-contact{
+  font-family: helvetica;
+  margin-top: 3%;
+  text-align: center;
+  color: rgb(255, 0, 0);
+  animation: blinktext 1.5s  infinite;
+}
+
+@keyframes blinktext{
+  50%{
+    opacity: 0;
+  }
+  80%{
+    opacity: .9;
+  }
+
+}
+
+
+
+.product-container{
+  margin-top: 5% ;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+}
+
+
+.product-card{
+  cursor: default;
+  border: thin solid rgba(0, 0, 0, 0.297);
+  height: 430px;
+  width: 300px;
+  text-align: center;
+  transition: .2s;
+  margin-bottom: 7%;
+}
+
+
+.product-card:hover{
+  transform: scale(1.03);
+  box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+              1px 6.7px 5.3px rgba(0, 0, 0, 0.351);
+}
+
+
+.product-head{
+  font-family: orkney-reg;
+  font-size: 22px;
+  color: white;
+  background-color: #293d51;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.product-head:hover{
+  background-color: #3c5b79;
+}
+
+
+
+
+product-body ul{
+  font-family: orkney-thin;
+  display: flex;
+  flex-direction: row ;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.product-body li{
+  font-size: 14px;
+  padding: 10px 0px;
+  list-style: none;
+  margin-left: -40px;
+
+}
+
+.product-container a{
+  margin-top: 50px;
+  background-color: #fc2d1e;
+  padding:8px 35px;
+  color: white;
+  border-radius: 0;
+  transition: .1s;
+}
+
+.product-container a:hover{
+  color: white;
+  transform: scale(1.1);
+}

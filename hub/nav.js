@@ -8,11 +8,13 @@ const items = document.querySelector(".nav-items");
 const form = document.querySelector("form");
 
 
+
 menuBtn.onclick = ()=>{
       items.classList.add("active");
       menuBtn.classList.add("hide");
       searchBtn.classList.add("hide");
       cancelBtn.classList.add("show");
+      body.add("fixed");
 }
 
 cancelBtn.onclick = ()=>{
@@ -53,6 +55,8 @@ function showSlides(n){
 }
 
 /*-------------------------------------------------------------------------------------------------------------------------*/
+
+
 $(document).ready(function(){
       $(".collapse.show").each(function(){
         $(this).prev(".card-header").find(".fa").addClass("fa-minus").removeClass("fa-plus");
@@ -182,4 +186,23 @@ window.onload = function() {
 			
 		})
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

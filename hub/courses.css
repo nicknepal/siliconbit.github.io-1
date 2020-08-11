@@ -45,22 +45,65 @@
   
   /*---------------------------------------------------banner CSS Start-----------------------------------------------------------------*/
   
+
   .banner{
     height: 30vh;
     background-color: #076bff;
     color: white;
     font-family: orkney-med;
-    font-size:50px;
+    font-size:35px;
     text-align: center;
+    padding-top: 3%;
+    padding-bottom: 2%;
   }
 
   .banner p{
     display: inline;
   }
   .banner img{
-    height: 110%;
+   height:110%;
   }
 
+  @media  (max-width:900px){
+    .banner{
+      height: 25vh;
+      padding-top: 5%;
+      padding-bottom: 4%;
+    }
+    .banner p{
+      font-size: 25px;
+      display: block;
+    }
+    .banner img{
+      height: 70%;
+    }
+  }
+
+ /*---------------------------------------------------sliding text -----------------------------------------------------------------*/
+  
+
+ .notice-library{
+  height: 5vh;
+  background-color:rgb(13, 157, 0) ;
+}
+
+.notice-library p{
+  white-space: nowrap;
+  font-family: orkney-thin;
+  color: white;
+  font-weight: lighter;
+  padding-top: 8px;
+  animation: slideleft 70s infinite;
+}
+
+@keyframes slideleft{
+  0%{
+    transform: translateX(100%);
+  }
+  100%{
+    transform: translateX(-50%);
+  }
+}
 
  /*---------------------------------------------------Search box CSS -----------------------------------------------------------------*/
   
@@ -161,8 +204,8 @@
     font-size: 20px;
     padding: 11px 0;
     border: none;
-    color: #000;
-    font-weight: 100;
+    color: #cb0fa2;
+    font-weight: 200;
     border-radius: 0;
 }
 #accordionSensor .fa{

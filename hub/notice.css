@@ -122,6 +122,7 @@
 }
 
 .nav-pills > li > a {
+  text-decoration: none;
   display: flex;
   flex-wrap: nowrap;
   border-radius: 3px;
@@ -196,4 +197,3 @@
     display: none;
   }
 }
-

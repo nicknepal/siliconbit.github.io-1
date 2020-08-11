@@ -18,7 +18,7 @@
 
 
 <!----------------------------------------------Upside NavBar------------------------------------------------------------>    
-<div style="height: 24px;" class="up-nav">
+<div style="height: 24px;" class="up-nav" >
   <img src="image/tick-icon.svg">
   <p> 
      For any Enquiry. Please feel free to call at <span><a href="tel://+9847279281" > 9847279281, </a><a href="tel://+9867245414" > 9867245414, </a><a href="tel://+071549281" >071-549281 </a></span> 24/7.
@@ -31,7 +31,7 @@
 <!----------------------------------------------NavBar Section------------------------------------------------------------>
 
 <nav>
-  <div class="menu-icon">
+  <div class="menu-icon" onclick="lockScroll();" >
       <span class="fas fa-bars"></span></div>
   <div class="logo" onclick="location.href='index.html';">HUB IT WORKGROUP</div>
   <div class="nav-items">
@@ -88,7 +88,7 @@
               <a  href="courses.html" class="btn btn-success">More about this Course...</a>
           </div>
           <div>
-              <img src="hubpics/banner-3.jpg">
+              <img src="/hubpics/banner-3.jpg">
           </div>
         </div>
 
@@ -103,7 +103,7 @@
             <a  href="courses.html" class="btn btn-success">More about this Course...</a>
           </div>
           <div>
-            <img src="hubpics/banner-23.jpg">
+            <img src="/hubpics/banner-23.jpg">
           </div>
         </div>
 
@@ -117,7 +117,7 @@
             <a  href="courses.html" class="btn btn-success">More about this Course...</a>
           </div>
           <div>
-            <img src="hubpics/banner-24.jpg">
+            <img src="/hubpics/banner-24.jpg">
           </div>          
         </div>
 
@@ -131,7 +131,7 @@
               <a  href="courses.html" class="btn btn-success">More about this Course...</a>
             </div>
             <div>
-              <img src="hubpics/banner-8.jpg">
+              <img src="/hubpics/banner-8.jpg">
             </div>
           </div>
 			</div>
@@ -148,15 +148,16 @@
 
 <!----------------------------------------------Contact ----------------------------------------------------------->    
 
+
 <div class="container-fluid" onclick="location.href='contact.html';" style="cursor: pointer;">
-  <div class="flex-cnt" style="background-color: #076bff;">
-      <div class="flex-item-1">   
-              <p class="call">
-                   For more information, contact office - Click here...
+  <div class="flex-int" style="background-color: #076bff;">
+      <div class="call">   
+              <p>
+                   For more information on services/products, contact office - Click here...
               </p>
       </div>
-      <div class="flex-item-1">
-          <img src="image/contact.png" id="contact-img" >
+      <div class="contact-img">
+          <img src="image/contact.png">
       </div>
   </div>
 </div>
@@ -204,6 +205,10 @@
 
 
 <!---------------------------------------------SEction Over----------------------------------------------------->
+
+
+
+
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 	<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
