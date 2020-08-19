@@ -128,7 +128,7 @@
 
  /*---------------------------------------------------login form -----------------------------------------------------------------*/
   
-/*---------------------------------contact-box-2----------------------------------------------*/
+/*---------------------------------contact-box-9----------------------------------------------*/
 .contact-box-9{
   width: 500px;
   height: 400px;
@@ -141,8 +141,9 @@
   margin-right: auto;
 }
 
-.contact-box-9 .info-box-2{
+.info-box-2{
   margin-bottom: 8%;
+  margin-top: 8%;
 }
 
 .info-box-1{
@@ -177,7 +178,6 @@
 
 
 textarea{
-      width:100%;
       background-color: transparent;
       border: none;
       border-bottom: 1px solid rgb(216, 216, 216);

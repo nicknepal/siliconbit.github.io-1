@@ -701,7 +701,11 @@ nav .logo.space{
 
 }
 
-
+@media screen and (max-width:850px){
+  .p_detail #banner-btn{
+  display: none;
+  }
+}  
 @media screen and (max-width:768px){
   .p_detail{
     display: none;
@@ -718,12 +722,12 @@ nav .logo.space{
   }
   .myslides .p_img{
     left: 25%;
-    height: 350px;
+    height: 450px;
   }
 
 }
 
-@media screen and (max-width:650px){
+@media screen and (max-width:640px){
   .myslides h2{
     font-size: 45px;
     left: 25%;
@@ -1163,7 +1167,7 @@ nav .logo.space{
   
   
   .review{
-    height: 80vh;
+    position: relative;
   }
   
   
