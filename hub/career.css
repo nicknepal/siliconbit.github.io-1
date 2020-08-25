@@ -72,7 +72,13 @@
       height: 50%;
     }
   }
-
+  @media  (max-width:768px){
+    .banner p{
+      padding-top: 5%;
+      font-size: 25px;
+      display: block;
+    }
+  }
  /*---------------------------------------------------sliding text -----------------------------------------------------------------*/
   
 
@@ -98,7 +104,14 @@
      transform: translateX(-90%);
    }
  }
+ @media screen and (max-width:500px){
+  .notice-library p{
+    font-size: 12px;
+    font-weight: bolder;
+    animation: slideleft 50s infinite;
+  }
 
+}
 
  /*---------------------------------------------------student form text upside-----------------------------------------------------------------*/
   .career{
@@ -111,7 +124,7 @@
 
   .career p{
     font-family: orkney-thin;
-    text-align: justify;
+    text-align: left;
   }
 
   .career ul li{

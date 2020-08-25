@@ -104,7 +104,14 @@
      transform: translateX(-50%);
    }
  }
+ @media screen and (max-width:500px){
+  .notice-library p{
+    font-size: 12px;
+    font-weight: bolder;
+    animation: slideleft 50s infinite;
+  }
 
+}
  /*---------------------------------------------------bootstrap navpills -----------------------------------------------------------------*/
 
 .product-contact{
@@ -146,6 +153,14 @@
   text-align: center;
   transition: .2s;
   margin-bottom: 7%;
+}
+
+@media screen and (max-width:768px){
+  .product-card{
+    margin-bottom:12%;
+    transform: translateX(-50%,-50%);
+    text-align: center;
+  }
 }
 
 

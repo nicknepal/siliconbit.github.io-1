@@ -104,7 +104,14 @@
      transform: translateX(-50%);
    }
  }
+ @media screen and (max-width:500px){
+  .notice-library p{
+    font-size: 12px;
+    font-weight: bolder;
+    animation: slideleft 50s infinite;
+  }
 
+}
 
  /*---------------------------------------------------Scholarship CSS -----------------------------------------------------------------*/
  .scholarship{
@@ -156,7 +163,7 @@
     padding: 11px 0;
     border: none;
     color: #cb0fa2;
-    font-weight: 200;
+    font-weight: 400;
     border-radius: 0;
 }
 #accordionSensor .fa{
@@ -170,13 +177,7 @@ background-color: whitesmoke!important;
 }
 .accordion>.card .card-header{margin-bottom: 10px;border: 0;}
 
-.card-body p{
-  font-weight: lighter;
-}
 
-.card-body ul{
-  font-weight: lighter;
-}
 
 .card-body{
   font-family: Helvetica;

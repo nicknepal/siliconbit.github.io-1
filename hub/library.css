@@ -99,7 +99,14 @@
    }
  }
 
+ @media screen and (max-width:500px){
+  .notice-library p{
+    font-size: 12px;
+    font-weight: bolder;
+    animation: slideleft 50s infinite;
+  }
 
+}
  /*---------------------------------------------------student form text upside-----------------------------------------------------------------*/
   
  .library-form{

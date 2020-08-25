@@ -104,50 +104,14 @@
     transform: translateX(-50%);
   }
 }
+@media screen and (max-width:500px){
+  .notice-library p{
+    font-size: 12px;
+    font-weight: bolder;
+    animation: slideleft 50s infinite;
+  }
 
- /*---------------------------------------------------Search box CSS -----------------------------------------------------------------*/
-  
-
- .search-box{
-   height: 13vh;
-   background: rgba(52, 52, 52, 0.358);
-   width: 100%;
-   padding: 15px;
-   display: flex;
-   justify-content: center;
- }
-
- .search-box .input {
-  width: 55%;
-  padding: 15px 20px;
-  border: none;
-  border-radius: 2px;
-  font-weight: normal;
-  font-family: orkney-reg;
-  font-size: large;
 }
-
-.searchbtn {
-  background: #cb0fa2;
-  width: 5%;
-  border-radius: 2px;
-  position: relative;
-  cursor: pointer;
-}
-
-.searchbtn .fas{
-  color: white;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 25px;
-}
-
-
-
- /*---------------------------------------------------Courses dropdowns CSS -----------------------------------------------------------------*/
- 
 
  /*---------------------------------------------------Scholarship CSS -----------------------------------------------------------------*/
  .scholarship{
@@ -171,10 +135,6 @@
   font-size: 13px;
   text-decoration: underline;
 }
-
-
-
-
 
 
 
@@ -205,7 +165,7 @@
     padding: 11px 0;
     border: none;
     color: #cb0fa2;
-    font-weight: 200;
+    font-weight: 400;
     border-radius: 0;
 }
 #accordionSensor .fa{
@@ -219,13 +179,7 @@ background-color: whitesmoke!important;
 }
 .accordion>.card .card-header{margin-bottom: 10px;border: 0;}
 
-.card-body p{
-  font-weight: lighter;
-}
 
-.card-body ul{
-  font-weight: lighter;
-}
 
 .card-body{
   font-family: Helvetica;

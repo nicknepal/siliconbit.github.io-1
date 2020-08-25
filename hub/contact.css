@@ -47,6 +47,7 @@
   /*---------------------------------------------------banner-----------------------------------------------------------------*/
   
   .banner{
+    position: relative;
     height: 30vh;
     background-color: #076bff;
     color: white;
@@ -77,6 +78,7 @@
   
 
  .notice-library{
+   position: relative;
    height: 5vh;
    background-color:rgb(13, 157, 0) ;
  }
@@ -86,7 +88,8 @@
    font-family: orkney-thin;
    color: white;
    font-weight: lighter;
-   padding-top: 8px;
+   padding-top: 8px ;
+   padding-bottom: 8px;
    animation: slideleft 70s infinite;
  }
 
@@ -122,9 +125,8 @@
 }
 
 .contact-info img{
-  height: 40px;
+  height: 30px;
   filter: invert(1);
-
 }
 .contact-info a{
   color: white;
@@ -150,3 +152,17 @@ iframe{
   height: 50vh;
 }
 
+@media screen and (max-width:768px){
+  .contact-info a{
+    font-size: 12px;
+  }
+
+}
+@media screen and (max-width:500px){
+  .notice-library p{
+    font-size: 12px;
+    font-weight: bolder;
+    animation: slideleft 50s infinite;
+  }
+
+}

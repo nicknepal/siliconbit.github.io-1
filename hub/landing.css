@@ -54,7 +54,7 @@ html,body{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  overflow-x: hidden;
+  overflow-x: hidden !important;
   scroll-behavior: smooth;
 }
   
@@ -468,7 +468,7 @@ nav .logo.space{
 	background-image: url('/hubpics/general-6.jpg');
 	background-repeat: no-repeat;
 	background-size: cover;
-	background-position: center;
+  background-position: center;
 	width: 100%;
 	height:76vh;
 	animation:slide 30s infinite;
@@ -477,7 +477,7 @@ nav .logo.space{
   .content{
 	color: white;
 	width: 100%;
-	height: 76.2vh;
+	height: 76vh;
 	background-color: rgba(25, 56, 255, 0.803); 
 	position: relative;
 	text-align: center;
@@ -620,36 +620,8 @@ nav .logo.space{
 	transition: .5s;
 }
 
-.notice-section{
-  position: absolute;
-  top: 80%;
-  width: 100%;
-  height: 30px;
-  background-color: white;
-}
 
-.notice-section p{
-  color: rgb(255, 13, 13);
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 14px;
-  white-space: nowrap;
-  align-items: center;
-  justify-content: center;
-  padding-top: 4px;
-  animation: notice 55s ease infinite ;
-}
-
-@keyframes notice {
-  0%{
-    transform: translateX(100%);
-  }
-  100%{
-    transform: translateX(-110%);
-  }
-}
- 
-
-
+/*---------------------------------------------btn-part setion media queries--------------------*/
 
 @media screen and  (max-width:1080px){
   .btn-part{
@@ -696,22 +668,24 @@ nav .logo.space{
 
 
 @media screen and (max-width:768px){
+  
   .line-between{
     display: none;
   }
   .btn-part{
-    left: 50%;
+    position: absolute;
     flex-direction: column;
-  	min-height: 30%;
-	  justify-content: space-evenly;
-	  align-items: center;
+    margin-top: 15%;
+    justify-content: space-around;
   }
   .btn-part p{
     display: none;
   }
+  .btn-main-1{
+    margin-bottom: 15%;
+  }
   .btn-main-1 a{
     font-size: 20px;
-    margin-left: 5%;
   }
   .btn-main-2 a{
     font-size: 20px;
@@ -728,6 +702,48 @@ nav .logo.space{
     font-size: 15px;
   }
 }
+
+
+/*----------------------------------------------------Notice Section CSS------------------------------------------------------*/
+.notice-section{
+  position: absolute;
+  top: 80%;
+  width: 100%;
+  height: 30px;
+  background-color: white;
+}
+
+.notice-section p{
+  color: rgb(255, 13, 13);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  white-space: nowrap;
+  align-items: center;
+  justify-content: center;
+  padding-top: 4px;
+  animation: notice 55s ease infinite ;
+}
+
+@keyframes notice {
+  0%{
+    transform: translateX(100%);
+  }
+  100%{
+    transform: translateX(-110%);
+  }
+}
+
+@media screen and (max-width:768px){
+  .notice-section{
+    display: none;
+  }
+
+}
+
+/*----------------------------------------------------Notice Section CSS------------------------------------------------------*/
+
+
+
 
 
 /*------------------------------Mid Section--- css----Over------------------------------------------------------------------------------*/

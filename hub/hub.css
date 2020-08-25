@@ -774,7 +774,7 @@ nav .logo.space{
   }
   .myslides .p_img{
     left: 15%;
-    height: 300px;
+    height: 275px;
   }
 
 }
@@ -829,9 +829,11 @@ nav .logo.space{
 }
 @media screen and (max-width:500px){
   .logo-img img{
-    margin-top: 5%;
+    margin-top: 4%;
   }
 } 
+
+
   
     /*------------------------------------------------------------Company Intro--------------------------------------------------*/
   
@@ -862,7 +864,7 @@ nav .logo.space{
   .flex-box-item-1 p{
     text-align: justify;
     font-family: orkney-thin;
-      font-size: 15px;
+    font-size: 15px;
   }
   
   .flex-box-item-1 a{
