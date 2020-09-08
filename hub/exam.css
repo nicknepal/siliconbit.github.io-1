@@ -136,97 +136,48 @@
   
 /*---------------------------------contact-box-9----------------------------------------------*/
 .contact-box-9{
-  width: 500px;
-  height: 400px;
-  position: relative;
-  border-radius: 10px;
-  border: .25px solid rgb(222, 222, 222);
-  padding-top: 3%;
-  margin-bottom: 3%;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.info-box-2{
-  margin-bottom: 8%;
-  margin-top: 8%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right:2.75% ;
 }
 
 .info-box-1{
-  display:flex;
+  display: flex;
   flex-direction: column;
-  margin-top: 15px;
+  align-items: center;
+  justify-content: space-evenly;
 }
-
-.contact-box-9 span{
-  position: absolute;
-  padding-left: 5px;
-  font-size: 17px;
+.info-box-1 div{
   font-family: orkney-thin;
-  color: rgb(155, 155, 155);
-  pointer-events: none;
-  transition: .1s;
-}
-
-.contact-box-9  input {
-  width:100%;
-  background-color: transparent;
-  border: none;
-  border-bottom: 1px solid rgb(235, 235, 235);
-  outline: none;
-  font-family: orkney-thin;
-  font-size: 17px;
-  height: 40px;
-  border-radius: 5px;
-  box-shadow: inset 2px 2px 2px #cbced1,
-              inset -2px -2px 2px #ffffff;
-}
-
-
-textarea{
-      background-color: transparent;
-      border: none;
-      border-bottom: 1px solid rgb(216, 216, 216);
-      outline: none;
-      border-radius: 5px;
-      box-shadow: inset 2px 2px 2px #cbced1,
-              inset -2px -2px 2px #ffffff;
-}
-
-
-input:focus~span,
-textarea:focus~span,
-input:valid~span,
-textarea:valid~span{
-  transform: translateY(-38px);
-  font-size: 20px;
-  letter-spacing: 1px;
-  font-family: orkney-thin;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-bottom: 5%;
 }
 
 
 .contact-box-9 #submit{
   height: 40px;
-  width: 130px;
+  width: 120%;
   border: none;
   margin-top: 15px;
-  background-color:#00a5bb ;
+  background-color:#02b9d2 ;
   color: white;
 }
 
 .contact-box-9 #submit:hover{
-  background-color: #038596;
+  background-color: #03cde8;
 }
 
-
-@media screen and(max-width:500px){
+@media screen and (max-width:800px){
   .contact-box-9{
-    width: 350px;
+    margin-right: 5%;
   }
-  
-  .contact-box-9  input {
-    width: 70%;
+}
+
+@media screen and (max-width:500px){
+  .contact-box-9{
+    margin-right: 10%;
   }
-
-
 }
